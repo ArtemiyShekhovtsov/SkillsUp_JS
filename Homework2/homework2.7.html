@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+<script>
+      var password = "Passw0rd!";
+      var userInput = prompt("Введите пароль:", "");
+    
+      	while(userInput === null) {
+      	alert("Доступ запрещен");
+      	break;
+      }
+      	while(userInput === password) {
+      	alert("Поздравляем, Ваш пароль введен верно!");
+      	break;
+      }
+      	while(userInput !== password) {
+      	userInput = prompt("Пароль введен неверно, пожайлуста попробуйте еще раз. У Вас осталось 4 попытки:", "");
+      	break;
+      }
+      	while(userInput !== password) {
+      	userInput = prompt("Пароль введен неверно, пожайлуста попробуйте еще раз. У Вас осталось 3 попытки:", "");
+      	break;
+      }
+       	while(userInput !== password) {
+      	userInput = prompt("Пароль введен неверно, пожайлуста попробуйте еще раз. У Вас осталось 2 попытки:", "");
+      	break;
+      }
+      	while(userInput !== password) {
+      	userInput = prompt("Пароль введен неверно, пожайлуста попробуйте еще раз. У Вас осталось 1 попытки:", "");
+      	alert ("Повторите попытку позже") 
+      	break;
+      }
+     	
+ 
+    </script>
+</body>
+</html>

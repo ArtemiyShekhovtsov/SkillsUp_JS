@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+<script>
+  
+  for (var i = -100; i <= 100; i++) {
+
+  for (var j = -100; j < i; j++) {
+      if (i % j == 0) break;
+  }
+
+  alert( i ); //Вывод с помощью цикла for
+}
+
+var i = -100;
+while (i < 100) {
+alert( i );
+i++;
+}             //Вывод с помощью цикла while
+
+  var i = -100;
+  do {
+  alert( i );
+  i++;
+  } 
+  while (i < 100); //Вывод с помощью цикла do...while
+
+</script>
+
+
+</body>
+</html>
+
+
