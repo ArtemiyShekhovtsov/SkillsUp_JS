@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+<script>
+  var totalCost = parseInt(prompt("Введите общую сумму потраченных денег за все время в торговой точке: ", 0));
+  var currentProductCost = parseInt(prompt("Введите сумму текущей покупки: ", 0));
+  var result = totalCost + currentProductCost;
+  
+  if (result >=0 && result <= 999) {
+      var discount = 2;
+      var resultcurrentProductCost = (result) - ((result * discount)/100);
+   		alert ("Финальная стоимость текущей покупки с учетом  " + discount + "%" +"  скидки будет составлять: " + resultcurrentProductCost);
+   }
+  else if (result >=1000 && result <= 2999)
+    {
+      var discount = 5;
+      var resultcurrentProductCost = (result) - ((result * discount)/100);
+   		alert ("Финальная стоимость текущей покупки с учетом  " + discount + "%" +"  скидки будет составлять: " + resultcurrentProductCost);
+   }
+  else if (result >=3000 && result <= 9999)
+    {
+      var discount = 8;
+      var resultcurrentProductCost = (result) - ((result * discount)/100);
+      alert ("Финальная стоимость текущей покупки с учетом  " + discount + "%" +"  скидки будет составлять: " + resultcurrentProductCost);
+   }
+  else if(result >=10000 && result <= Infinity)
+    {
+     var discount = 10;
+     var resultcurrentProductCost = (result) - ((result * discount)/100);
+     alert ("Финальная стоимость текущей покупки с учетом  " + discount + "%" +"  скидки будет составлять: " + resultcurrentProductCost);
+   }
+  else  {
+      alert ("Упс!!! Попробуй ввести другое значение!");
+  }
+     
+
+  
+</script>
+
+
+</body>
+</html>
