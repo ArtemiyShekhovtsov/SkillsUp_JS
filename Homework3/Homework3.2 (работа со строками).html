@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    <h2>JavaScript</h2>
+
+    <script>
+     
+      var input = prompt("Пожайлуста, введите Email");
+   
+      var inputSobachka = input.indexOf("@");
+      var inputName1 = input.substring( 0, inputSobachka);
+      var inputName2 = input.substring(inputSobachka);
+      var repstring = "";
+        for (var i = 0; i < inputName1.length; i++) {
+           repstring += "*";
+    }
+            alert(repstring + inputName2);
+      
+    </script>
+
+  </body>
+
+</html>

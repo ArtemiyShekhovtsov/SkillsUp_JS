@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    <h2>JavaScript</h2>
+
+    <script>
+     
+    
+      var UserInput = prompt("Введите Ваш email");
+
+      if (UserInput.indexOf("@.") > 0) {
+      	 alert("Email:  "+UserInput+ " - невалидный");
+      }
+
+      else if (UserInput.indexOf('@') >=1 && UserInput.indexOf('.') >=0 ) {
+      	alert("Email:  "+UserInput+ " - является валидным");
+      } 
+
+      else {
+      	alert ("Email:  "+UserInput+ " - невалидный")
+      }
+  
+    </script>
+
+  </body>
+
+</html>
